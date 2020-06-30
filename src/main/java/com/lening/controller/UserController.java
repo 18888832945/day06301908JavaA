@@ -74,7 +74,9 @@ public class UserController {
          * select pid from t_pmx a where a.pstatus =1 and userid=37 其实我就需要pid，查询流程id，因为我的页面展示的时候，
          * 我需要知道这个是谁请假的，请了多次时间，什么时候开始的，那个班级的
          */
-
+        /**
+         * 这是我今天测试git使用的注释
+         */
         List<QjVo> list = userService.getQjshListByUserid(ub.getId());
         model.addAttribute("list", list);
         return "qjsh_list";
