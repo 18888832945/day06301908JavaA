@@ -40,6 +40,9 @@ public class UserController {
     public String saveWdsh(HttpServletRequest request,Integer pid,Integer shstatus){
         UserBean ub = (UserBean)request.getSession().getAttribute("ub");
         userService.saveWdsh(pid,shstatus,ub.getId());
+        /**
+         * 这是我的开发
+         */
         return "redirect:getQjShList.do";
     }
 
